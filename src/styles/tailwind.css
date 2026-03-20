@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+    --color-midnight: #000000;
+    --color-midnight-light: #2B3A67;
+    --color-copper: #C19A6B;
+    --color-copper-light: #E0C19A;
+    --color-sage: #8B9A8F;
+    --color-sage-light: #B4BFB8;
+    --color-warm-white: #F4F3F1;
+    --color-anthracite: #333333;
+
+    --font-heading: "Inter", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-subtitle: "Inter", sans-serif;
+
+    --background-image-destiny-gradient: linear-gradient(to bottom right,
+            rgba(28, 37, 65, 0.9),
+            rgba(139, 154, 143, 0.5));
+}
+
+@layer components {
+    .heading-prophetic {
+        @apply font-heading tracking-tight leading-tight;
+        text-shadow: 0 2px 4px rgba(28, 37, 65, 0.05);
+    }
+
+    .btn-primary {
+        @apply bg-midnight text-copper rounded-lg px-8 py-3 hover:scale-105 transition duration-300 inline-block text-center;
+    }
+
+    .btn-secondary {
+        @apply border-2 border-midnight text-midnight rounded-lg px-8 py-3 hover:bg-midnight hover:text-warm-white transition duration-300 inline-block text-center;
+    }
+
+    .card-premium {
+        @apply bg-white rounded-xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md;
+    }
+}
+
+body {
+    @apply bg-warm-white font-body text-anthracite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-heading text-midnight;
+}
