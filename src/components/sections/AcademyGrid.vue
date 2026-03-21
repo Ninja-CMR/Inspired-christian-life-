@@ -26,9 +26,11 @@ defineProps<{
         >
           <!-- Image Placeholder -->
           <div class="h-48 bg-sage/10 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent">
+              <img :src="formation.image" alt="" class="w-full h-full object-cover">
+            </div>
             <!-- Category Badge -->
-            <span class="absolute top-4 left-4 bg-white/90 text-copper px-3 py-1 rounded-full text-sm font-bold shadow-sm">
+            <span class="absolute top-4 left-4 bg-white/90 text-black px-3 py-1 rounded-full text-sm font-bold shadow-sm">
               {{ formation.category }}
             </span>
           </div>

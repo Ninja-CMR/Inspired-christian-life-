@@ -3,7 +3,7 @@ const testimonials = [
   {
     name: "Marie L.",
     location: "Douala, Cameroun",
-    quote: "J'ai enfin compris qui j'étais et comment mon histoire personnelle influençait mes relations. Une révélation prophétique qui a tout changé.",
+    quote: "Je comprends que les émotions ne sont pas des faiblesses, mais une force",
     rating: 5
   },
   {

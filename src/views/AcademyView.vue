@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import AcademyGrid from '../components/sections/AcademyGrid.vue';
+import AcademyAxes from '../components/sections/AcademyAxes.vue';
 import type { IFormation } from '../interfaces/IFormation';
+
+import afficheFormation from '../assets/images/ecole/affiche1.jpeg'
+import afficheFormation2 from '../assets/images/ecole/Personnalité.jpg'
+import afficheFormation3 from '../assets/images/ecole/estime.jpg'
+import afficheFormation4 from '../assets/images/ecole/soi.jpg'
 
 const formations: IFormation[] = [
   {
@@ -9,7 +15,8 @@ const formations: IFormation[] = [
     description: 'Comprendre vos forces et faiblesses pour un avenir relationnel éclairé. Un parcours profond pour explorer les traits qui définissent votre interaction avec les autres.',
     priceCFA: 10000,
     duration: '1 mois',
-    category: 'Personnalité'
+    category: 'Personnalité',
+    image: afficheFormation2
   },
   {
     id: '2',
@@ -17,7 +24,8 @@ const formations: IFormation[] = [
     description: 'Guérir l\'estime de soi et briser les cycles pessimistes en 12 jours. Une méthode intensive pour reprogrammer vos pensées selon la vérité biblique.',
     priceCFA: 2000,
     duration: '12 Jours',
-    category: 'Système Émotionnel'
+    category: 'Système Émotionnel',
+    image: afficheFormation3
   },
   {
     id: '3',
@@ -25,7 +33,8 @@ const formations: IFormation[] = [
     description: 'Préparation prophétique et pratique à l\'alliance de destinée sur 3 mois. Apprenez les fondements d\'un mariage solide avant de dire "Oui".',
     priceCFA: 10000,
     duration: '3 mois',
-    category: 'Mariage'
+    category: 'Mariage',
+    image: afficheFormation
   },
   {
     id: '4',
@@ -33,7 +42,8 @@ const formations: IFormation[] = [
     description: 'Redécouvrez votre valeur aux yeux de Dieu et brisez les chaînes du passé qui vous empêchent d\'avancer.',
     priceCFA: 7000,
     duration: '1 mois',
-    category: 'Système Émotionnel'
+    category: 'Système Émotionnel',
+    image: afficheFormation4
   }
 ];
 </script>
@@ -53,6 +63,8 @@ const formations: IFormation[] = [
         </p>
       </div>
     </header>
+
+    <AcademyAxes />
 
     <AcademyGrid :formations="formations" />
 

@@ -36,7 +36,7 @@ const handleSubmit = () => {
               </div>
               <div>
                 <h3 class="text-xs font-bold uppercase tracking-widest text-copper mb-1">Email</h3>
-                <p class="text-lg font-bold">contact@inspirechristianlife.com</p>
+                <p class="text-lg font-bold">picasorines@gmail.com</p>
               </div>
             </div>
 
@@ -87,7 +87,7 @@ const handleSubmit = () => {
             </div>
             <button 
               type="submit" 
-              class="w-full bg-black text-white font-bold py-5 rounded-2xl hover:bg-black/90 transition-all duration-300 uppercase tracking-widest text-sm"
+              class="btn-primary w-full"
             >
               Envoyer le message
             </button>

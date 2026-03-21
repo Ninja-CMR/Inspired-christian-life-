@@ -1,24 +1,30 @@
 <script setup lang="ts">
+import ebookpayant from '../assets/images/ebook/ebookpayant.jpeg'
+import ebookgratuit from '../assets/images/ebook/ebookgratuit.avif'
+import ebookPDF from '../assets/ebook pdf/LES 10 --CROYANCES QUI ELOIGNENT LE MARIAGE.pdf'
+
 const resources = [
   {
     id: 1,
     title: "10 croyances qui éloignent le mariage de toi",
     description: "Un guide gratuit pour identifier et briser les barrières mentales vers l'alliance.",
-    type: "Ebook Gratuit",
+    image: ebookgratuit, 
     badge: "Gratuit",
     actionText: "Télécharger",
     color: "bg-sage/10",
-    textColor: "text-sage"
+    textColor: "text-sage",
+    link: ebookPDF
   },
   {
     id: 2,
     title: "Je ne subis plus",
     description: "Comprendre et guérir son système émotionnel pour ne plus être victime de son passé.",
-    type: "Ebook",
     badge: "3.000 CFA",
     actionText: "Acheter",
     color: "bg-copper/10",
-    textColor: "text-copper"
+    textColor: "text-copper",
+    image: ebookpayant,
+    link: 'https://chretienentrepreneur.mychariow.shop/prd_xyl1m1'
   }
 ];
 </script>
@@ -41,10 +47,13 @@ const resources = [
           :key="item.id"
           class="group border-b border-black/10 pb-12 hover:border-black transition-colors duration-500"
         >
+        
           <div :class="['aspect-[16/9] mb-8 rounded-2xl flex items-center justify-center relative overflow-hidden', item.color]">
-            <span :class="['text-xl font-bold uppercase tracking-widest opacity-30', item.textColor]">
-              {{ item.type }}
-            </span>
+            <img 
+              :src="item.image" 
+              alt="" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            >
           </div>
           
           <div class="flex items-center gap-4 mb-4">
@@ -61,12 +70,17 @@ const resources = [
             {{ item.description }}
           </p>
 
-          <button class="flex items-center gap-2 font-bold text-black group-hover:gap-4 transition-all duration-300 uppercase tracking-widest text-sm">
+          <a 
+            :href="item.link" 
+            :download="item.id === 1 ? 'Les 10 Croyances - Inspire Christian Life.pdf' : undefined"
+            :target="item.id === 2 ? '_blank' : undefined"
+            class="flex items-center gap-2 font-bold text-black group-hover:gap-4 transition-all duration-300 uppercase tracking-widest text-sm"
+          >
             {{ item.actionText }}
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </div>

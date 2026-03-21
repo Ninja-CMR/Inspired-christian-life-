@@ -33,7 +33,7 @@ const steps = [
             Ne laissez plus votre futur au hasard. Prenez rendez-vous pour une session de découverte et commencez à aligner votre vie sur le plan divin.
           </p>
           
-          <router-link to="/contact" class="inline-block bg-white text-black px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-copper hover:text-white transition-all duration-300">
+          <router-link to="/contact" class="inline-block bg-white text-black px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-copper hover:text-black transition-all duration-300">
             Prendre rendez-vous
           </router-link>
         </div>
@@ -47,7 +47,7 @@ const steps = [
             <span class="absolute -left-20 md:-left-24 text-4xl md:text-5xl font-bold text-white/10 italic">
               {{ step.number }}
             </span>
-            <h3 class="text-2xl font-bold mb-3 uppercase tracking-tight">
+            <h3 class="text-2xl text-copper font-bold mb-3 uppercase tracking-tight">
               {{ step.title }}
             </h3>
             <p class="text-gray-400 font-body">

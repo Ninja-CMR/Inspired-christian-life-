@@ -60,7 +60,7 @@ onUnmounted(() => {
       </div>
 
       <!-- Desktop CTA -->
-      <router-link to="/contact" class="hidden md:block bg-black text-white text-xs font-bold px-8 py-3 rounded-full hover:bg-copper transition-all duration-300 uppercase tracking-widest">
+      <router-link to="/contact" class="hidden md:block bg-black text-white text-xs font-bold px-8 py-3 rounded-full hover:bg-copper hover:text-white transition-all duration-300 uppercase tracking-widest">
         S'INSCRIRE
       </router-link>
 
@@ -87,8 +87,8 @@ onUnmounted(() => {
     </div>
 
     <Transition name="fade-slide">
-      <div v-if="isMenuOpen" class="!bg-white  flex flex-col pt-14 p-6 md:hidden">
-        <div class="flex flex-col gap-6 pb-[10px]  text-black">
+      <div v-if="isMenuOpen" class="!bg-white flex flex-col pt-14 p-6 md:hidden">
+        <div class="flex flex-col gap-6 pb-[10px] text-black">
           <router-link 
             v-for="(link, i) in [
               { name: 'Accueil', path: '/' },
@@ -109,7 +109,7 @@ onUnmounted(() => {
           <router-link 
             to="/contact" 
             @click="closeMenu"
-            class="block w-full bg-black text-white text-center py-5 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-copper transition-colors duration-300"
+            class="block w-full bg-black text-white text-center py-5 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-copper hover:text-black transition-colors duration-300"
           >
             S'INSCRIRE
           </router-link>
@@ -127,11 +127,11 @@ onUnmounted(() => {
 }
 
 .nav-link {
-  @apply text-sm font-bold text-black/60 hover:text-black transition-colors duration-300 uppercase tracking-widest;
+  @apply text-sm font-bold text-black/60 hover:text-copper transition-colors duration-300 uppercase tracking-widest;
 }
 
 .router-link-active:not(.group) {
-  @apply text-black;
+  @apply text-midnight;
 }
 
 /* Mobile Menu Transitions */
