@@ -36,7 +36,7 @@ onUnmounted(() => {
   <nav 
     class="fixed top-0 left-0 w-full z-50 transition-all duration-500"
     :class="[
-      isScrolled || isMenuOpen ? 'bg-white/95 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-8'
+      isScrolled || isMenuOpen ? 'bg-white/95 backdrop-blur-md py-4 shadow-sm' : 'bg-white/40 backdrop-blur-sm py-6 border-b border-black/5'
     ]"
   >
     <div class="container mx-auto px-6 flex items-center justify-between relative z-50">

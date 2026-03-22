@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import bgImg1 from '../../assets/images/activités/photo_5961063863094986784_y.jpg';
+
 const pillars = [
   {
     title: "Dieu au Centre",
@@ -19,9 +21,14 @@ const pillars = [
 </script>
 
 <template>
-  <section class="py-24 bg-midnight relative overflow-hidden">
+  <section class="py-32 bg-midnight relative overflow-hidden">
+    <!-- Single Background Image -->
+    <div class="absolute inset-0 z-0 opacity-20">
+      <img :src="bgImg1" class="w-full h-full object-cover mix-blend-overlay" />
+    </div>
+
     <!-- Subtle Pattern Overlay -->
-    <div class="absolute inset-0 opacity-5 pointer-events-none">
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none z-10">
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -33,7 +40,7 @@ const pillars = [
     </div>
 
     <div class="container mx-auto px-6 relative z-10">
-      <h2 class="text-4xl md:text-5xl !text-warm-white text-center mb-16 max-w-4xl mx-auto leading-tight">
+      <h2 class="text-4xl md:text-5xl !text-white text-center mb-16 max-w-4xl mx-auto leading-tight font-heading">
         Plus qu'un simple mouvement, une préparation prophétique à l'alliance.
       </h2>
 
@@ -48,10 +55,10 @@ const pillars = [
               <path :d="pillar.iconPath" />
             </svg>
           </div>
-          <h3 class="text-2xl text-warm-white mb-4 font-heading">
+          <h3 class="text-2xl !text-white mb-4 font-heading group-hover:text-white transition-colors">
             {{ pillar.title }}
           </h3>
-          <p class="text-warm-white/80 leading-relaxed font-body">
+          <p class="text-white/80 leading-relaxed font-body">
             {{ pillar.description }}
           </p>
         </div>

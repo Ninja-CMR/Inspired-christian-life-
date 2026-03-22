@@ -18,7 +18,7 @@
             </div>
           </router-link>
           <p class="text-anthracite font-body text-lg leading-relaxed max-w-md">
-            Porter la voix prophétique pour restaurer l'identité et le dessein divin.
+            Porter la voix prophétique pour bâtir l’authenticité en christ et des mariages conçus selon la pensée de Dieu.
           </p>
         </div>
 
@@ -37,7 +37,7 @@
           <h4 class="text-midnight font-bold uppercase tracking-widest text-sm mb-8">Contact</h4>
           <ul class="space-y-4 text-anthracite">
             <li>Douala, Cameroun</li>
-            <li>contact@inspirechristianlife.com</li>
+            <li>Inpirechristianlife.infos@gmail.com</li>
             <li class="flex gap-4 pt-4">
               <a href="https://www.facebook.com/share/1SeYWfMn2G/?mibextid=wwXIfr" class="w-10 h-10 rounded-full border border-midnight/10 flex items-center justify-center hover:bg-midnight hover:text-copper transition-all">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>

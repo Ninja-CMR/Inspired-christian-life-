@@ -9,9 +9,11 @@ import GallerySection from '../components/sections/GallerySection.vue';
 import TestimonialsCarousel from '../components/sections/TestimonialsCarousel.vue';
 import ReservationSection from '../components/sections/ReservationSection.vue';
 import CoachingCallout from '../components/sections/CoachingCallout.vue';
+import BlogSection from '../components/sections/BlogSection.vue';
+import EventsSection from '../components/sections/EventsSection.vue';
 import type { IFormation } from '../interfaces/IFormation';
 import afficheFormation from '../assets/images/ecole/affiche1.jpeg'
-import afficheFormation2 from '../assets/images/ecole/Personnalité.jpg'
+import afficheFormation2 from '../assets/images/ecole/estime.jpeg'
 import afficheFormation3 from '../assets/images/ecole/estime.jpg'
 
 const formations: IFormation[] = [
@@ -47,10 +49,7 @@ const formations: IFormation[] = [
 
 <template>
   <main>
-    <HeroSection 
-      title="Vivez un Mariage selon la Pensée de Dieu : Le Mariage de Destinée."
-      subtitle="Ne cherchez pas seulement à vous marier. Apprenez à vous découvrir, à guérir votre cœur et à aligner votre alliance sur le plan divin unique de votre vie."
-    />
+    <HeroSection />
     
     <VisionGrid />
     
@@ -63,8 +62,12 @@ const formations: IFormation[] = [
     <EbookShowcase />
     
     <GallerySection />
+
+    <EventsSection />
     
     <TestimonialsCarousel />
+
+    <BlogSection />
     
     <ReservationSection />
     

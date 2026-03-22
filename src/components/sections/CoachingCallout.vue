@@ -10,7 +10,7 @@
     <div class="container mx-auto px-6 relative z-10">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-4xl md:text-5xl text-midnight mb-6">
-          Besoin d'un Guidage Approfondi ? L'Accompagnement Personnalisé sur un An.
+          Besoin d'un Guide Approfondi ? L'Accompagnement Personnalisé sur un An.
         </h2>
         <h3 class="text-xl md:text-2xl text-midnight/80 font-subtitle mb-12">
           Alignez votre vie et vos relations sur la pensée de Dieu avec un coaching sur mesure.
@@ -21,11 +21,11 @@
           target="_blank"
           class="inline-block bg-copper text-midnight text-xl font-bold px-12 py-5 rounded-full hover:bg-copper-light transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-copper/20"
         >
-          Demander un entretien de coaching (300.000 CFA / 500€)
+          Demander un entretien de coaching 
         </a>
         
         <p class="mt-8 text-midnight/40 text-sm">
-          Places limitées pour garantir un accompagnement de haute qualité.
+          Un accompagnement pratique et minutieux de haute qualité
         </p>
       </div>
     </div>

@@ -10,9 +10,9 @@
     --color-warm-white: #ffffff;
     --color-anthracite: #1a1a1a;
 
-    --font-heading: "Inter", sans-serif;
-    --font-body: "Inter", sans-serif;
-    --font-subtitle: "Inter", sans-serif;
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Montserrat", sans-serif;
+    --font-subtitle: "Montserrat", sans-serif;
 
     --background-image-destiny-gradient: linear-gradient(to bottom right,
             rgba(0, 0, 0, 1),

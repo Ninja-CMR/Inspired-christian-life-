@@ -36,7 +36,7 @@ const handleSubmit = () => {
               </div>
               <div>
                 <h3 class="text-xs font-bold uppercase tracking-widest text-copper mb-1">Email</h3>
-                <p class="text-lg font-bold">picasorines@gmail.com</p>
+                <p class="text-lg font-bold">Inpirechristianlife.infos@gmail.com</p>
               </div>
             </div>
 

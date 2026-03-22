@@ -1,87 +1,194 @@
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue';
 import img1 from '../../assets/images/mariage/WhatsApp Image 2026-03-20 at 19.41.32.jpeg'
 import img2 from '../../assets/images/mariage/WhatsApp Image 2026-03-20 at 19.50.55 (1).jpeg'
 import img3 from '../../assets/images/mariage/WhatsApp Image 2026-03-20 at 19.50.55 (2).jpeg'
-import img4 from '../../assets/images/mariage/WhatsApp Image 2026-03-20 at 19.50.56 (1).jpeg'
+import img4 from '../../assets/images/mariage/imgmariage.jpeg'
 
-const features = [
+const currentSlide = ref(0);
+let timer: any = null;
+
+const slides = [
   {
-    title: "Le Mariage de Destinée",
-    description: "Une union qui dépasse le simple sentiment pour s'aligner sur un appel divin commun."
+    title: "Alliances de Destinée",
+    description: "Bâtir des foyers solides fondés sur la pensée de Dieu et la révélation prophétique.",
+    image: img1,
+    tag: "Fondation"
   },
   {
     title: "Préparation Prophétique",
-    description: "Identifier et lever les barrières spirituelles avant l'alliance."
+    description: "Identifier et lever les barrières invisibles avant le Oui pour un mariage épanoui.",
+    image: img2,
+    tag: "Accompagnement"
   },
   {
-    title: "Alliances Solides",
-    description: "Bâtir sur des fondements inébranlables pour une vie de couple épanouie."
+    title: "Fusion de Missions",
+    description: "Aligner deux destinées individuelles pour accomplir un programme divin commun.",
+    image: img3,
+    tag: "Vision"
+  },
+  {
+    title: "Alliances Durables",
+    description: "Bâtir des foyers qui résistent au temps et aux tempêtes grâce aux principes du Royaume.",
+    image: img4,
+    tag: "Eternité"
+  }
+];
+
+const nextSlide = () => {
+  currentSlide.value = (currentSlide.value + 1) % slides.length;
+};
+
+const goToSlide = (index: number) => {
+  currentSlide.value = index;
+  resetTimer();
+};
+
+const resetTimer = () => {
+  if (timer) clearInterval(timer);
+  timer = setInterval(nextSlide, 7000);
+};
+
+onMounted(() => {
+  resetTimer();
+});
+
+onUnmounted(() => {
+  if (timer) clearInterval(timer);
+});
+
+const features = [
+  {
+    title: "Mariage selon Son Cœur",
+    description: "Une union qui honore Dieu."
+  },
+  {
+    title: "Équilibre & Harmonie",
+    description: "Des foyers stables avec Christ."
   }
 ];
 </script>
 
 <template>
-  <section class="py-24 bg-midnight text-white overflow-hidden relative">
-    <!-- Decorative background -->
-    <div class="absolute top-0 right-0 w-1/3 h-full bg-copper/5 -skew-x-12 transform origin-top translate-x-1/2"></div>
+  <section class="py-32 bg-midnight text-white overflow-hidden relative min-h-[850px] flex items-center">
+    <!-- Slider Background -->
+    <div class="absolute inset-0 z-0">
+      <TransitionGroup name="fade">
+        <div 
+          v-for="(slide, index) in slides" 
+          :key="slide.title"
+          v-show="currentSlide === index"
+          class="absolute inset-0"
+        >
+          <div class="absolute inset-0 bg-black/60 z-10"></div>
+          <img 
+            :src="slide.image" 
+            :alt="slide.title" 
+            class="w-full h-full object-cover object-center scale-100"
+            style="animation: slowZoom 30s infinite alternate"
+          />
+        </div>
+      </TransitionGroup>
+    </div>
     
-    <div class="container mx-auto px-6 relative z-10">
+    <div class="container mx-auto px-6 relative z-20">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <!-- Content -->
-        <div 
-          v-motion
-          :initial="{ opacity: 0, x: -50 }"
-          :enter="{ opacity: 1, x: 0, transition: { duration: 800 } }"
-        >
-          <span class="text-copper font-bold uppercase tracking-[0.3em] text-sm mb-6 block">Alliances de Destinée</span>
-          <h2 class="text-4xl !text-warm-white md:text-6xl font-bold mb-8 uppercase tracking-tighter leading-tight">
-            Bâtir des <span class="text-copper italic">Foyers</span> <br/> 
-            Selon le Cœur de Dieu
-          </h2>
-          <p class="text-xl text-gray-400 font-body leading-relaxed mb-12">
-            Le mariage n'est pas une fin en soi, mais le début d'une mission. Nous vous accompagnons dans cette transition sacrée avec une approche qui mêle sagesse biblique et réalisme pratique.
-          </p>
-
-          <div class="space-y-8">
-            <div v-for="feature in features" :key="feature.title" class="flex gap-6 group">
-              <div class="w-12 h-12 rounded-full border border-copper/30 flex items-center justify-center shrink-0 group-hover:bg-copper group-hover:text-midnight transition-all duration-300">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
+        <div class="max-w-xl">
+          <TransitionGroup name="slide-up">
+            <div 
+              v-for="(slide, index) in slides" 
+              :key="slide.title"
+              v-show="currentSlide === index"
+              class="space-y-10"
+            >
+              <div class="space-y-4">
+                <span class="text-copper font-bold uppercase tracking-[0.4em] text-xs block opacity-100">{{ slide.tag }}</span>
+                <h2 class="text-5xl md:text-7xl font-bold !text-white uppercase tracking-tighter leading-tight font-heading drop-shadow-2xl">
+                  {{ slide.title }}
+                </h2>
               </div>
-              <div>
-                <h4 class="text-xl font-bold mb-2 uppercase tracking-wide">{{ feature.title }}</h4>
-                <p class="text-gray-500">{{ feature.description }}</p>
+              
+              <p class="text-xl text-white/90 font-body leading-relaxed max-w-lg drop-shadow-lg">
+                {{ slide.description }}
+              </p>
+
+              <div class="flex flex-col gap-6 pt-4">
+                <div v-for="feature in features" :key="feature.title" class="flex items-center gap-4 group">
+                  <div class="w-2.5 h-2.5 rounded-full bg-copper shrink-0 shadow-[0_0_10px_rgba(245,224,0,0.6)]"></div>
+                  <h4 class="text-lg font-bold !text-white uppercase tracking-wide">{{ feature.title }}</h4>
+                </div>
+              </div>
+              
+              <div class="pt-8">
+                <router-link to="/academy" class="inline-block bg-copper text-midnight font-bold px-10 py-4 rounded-full hover:bg-white transition-all duration-300 uppercase tracking-widest text-sm shadow-xl">
+                  Découvrir l'école des futurs époux
+                </router-link>
               </div>
             </div>
-          </div>
+          </TransitionGroup>
         </div>
 
-        <!-- Images Grid -->
-        <div 
-          class="grid grid-cols-2 gap-6"
-          v-motion
-          :initial="{ opacity: 0, scale: 0.9 }"
-          :enter="{ opacity: 1, scale: 1, transition: { duration: 1000 } }"
-        >
-          <div class="space-y-6">
-            <div class="rounded-3xl overflow-hidden shadow-2xl skew-y-2">
-              <img :src="img1" alt="Mariage 1" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-700" />
-            </div>
-            <div class="rounded-3xl overflow-hidden shadow-2xl -skew-y-2">
-              <img :src="img2" alt="Mariage 2" class="w-full h-80 object-cover hover:scale-110 transition-transform duration-700" />
-            </div>
-          </div>
-          <div class="space-y-6 pt-12">
-            <div class="rounded-3xl overflow-hidden shadow-2xl -skew-y-2">
-              <img :src="img3" alt="Mariage 3" class="w-full h-80 object-cover hover:scale-110 transition-transform duration-700" />
-            </div>
-            <div class="rounded-3xl overflow-hidden shadow-2xl skew-y-2">
-              <img :src="img4" alt="Mariage 4" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-700" />
-            </div>
-          </div>
+        <!-- Navigation Dots -->
+        <div class="flex lg:flex-col gap-4 justify-center">
+          <button 
+            v-for="(_, index) in slides" 
+            :key="index"
+            @click="goToSlide(index)"
+            class="group h-12 flex items-center gap-4 focus:outline-none"
+          >
+            <div 
+              class="h-[2px] transition-all duration-500"
+              :class="currentSlide === index ? 'w-12 bg-copper' : 'w-6 bg-white/20'"
+            ></div>
+            <span 
+              class="text-[10px] uppercase tracking-widest transition-colors duration-300"
+              :class="currentSlide === index ? 'text-copper' : 'text-white/20'"
+            >
+              0{{ index + 1 }}
+            </span>
+          </button>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-up-enter-active {
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s;
+}
+
+.slide-up-leave-active {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1.05); }
+  to { transform: scale(1.15); }
+}
+
+.container {
+  max-width: 1200px;
+}
+</style>

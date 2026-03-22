@@ -33,26 +33,30 @@ const steps = [
             Ne laissez plus votre futur au hasard. Prenez rendez-vous pour une session de découverte et commencez à aligner votre vie sur le plan divin.
           </p>
           
-          <router-link to="/contact" class="inline-block bg-white text-black px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-copper hover:text-black transition-all duration-300">
+          <router-link to="/contact" class="inline-block bg-white text-black px-12 py-5 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-copper hover:text-midnight transition-all duration-300 shadow-2xl hover:-translate-y-1 transform active:scale-95 animate-pulse-slow">
             Prendre rendez-vous
           </router-link>
         </div>
 
-        <div class="space-y-12 border-l border-white/10 pl-8 md:pl-12">
+        <div class="space-y-16 border-l border-white/5 pl-8 md:pl-16 relative">
           <div 
             v-for="step in steps" 
             :key="step.number"
-            class="relative"
+            class="relative group"
           >
-            <span class="absolute -left-20 md:-left-24 text-4xl md:text-5xl font-bold text-white/10 italic">
+            <!-- Background number -->
+            <span class="absolute -left-28 md:-left-32 top-0 text-6xl md:text-8xl font-black text-copper/20 italic select-none transition-all duration-500 group-hover:text-copper/40">
               {{ step.number }}
             </span>
-            <h3 class="text-2xl text-copper font-bold mb-3 uppercase tracking-tight">
-              {{ step.title }}
-            </h3>
-            <p class="text-gray-400 font-body">
-              {{ step.description }}
-            </p>
+            
+            <div class="relative z-10">
+              <h3 class="text-2xl !text-white font-heading font-bold mb-4 uppercase tracking-tighter">
+                {{ step.title }}
+              </h3>
+              <p class="text-gray-400 font-body leading-relaxed max-w-sm">
+                {{ step.description }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -63,5 +67,14 @@ const steps = [
 <style scoped>
 .container {
   max-width: 1200px;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 rgba(245, 224, 0, 0); }
+  50% { transform: scale(1.02); box-shadow: 0 0 20px rgba(245, 224, 0, 0.2); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s infinite ease-in-out;
 }
 </style>
