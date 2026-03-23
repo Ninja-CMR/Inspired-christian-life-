@@ -5,7 +5,7 @@ import AcademyAxes from '../components/sections/AcademyAxes.vue';
 import type { IFormation } from '../interfaces/IFormation';
 
 import afficheFormation from '../assets/images/ecole/affiche1.jpeg'
-import afficheFormation2 from '../assets/images/ecole/Personnalite.jpg'
+import afficheFormation2 from '../assets/images/ecole/estime.jpeg'
 import afficheFormation3 from '../assets/images/ecole/estime.jpg'
 import afficheFormation4 from '../assets/images/ecole/soi.jpg'
 
