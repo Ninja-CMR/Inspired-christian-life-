@@ -6,21 +6,21 @@ import img4 from '../../assets/images/activités/fraternité.jpg'
 
 const events = [
   {
-    title: "Atelier Identité & Destinée",
-    location: "Douala / En Ligne",
+    title: "Christian AFTERWORK",
+    location: "Douala ",
     date: "Bientôt disponible",
     image: img1
   },
   {
-    title: "Retraite Spirituelle Couples",
+    title: "Assemblée générales ICL (AG)",
     location: "Douala/ En Présentiel",
     date: "Décembre 2026",
     image: img2
   },
   {
-    title: "Conférence Vision & Onction",
-    location: "Yaoundé",
-    date: "Janvier 2027",
+    title: "Agape ICL",
+    location: "Doaula",
+    date: "Bientôt disponible",
     image: img3
   }
 ];
@@ -41,13 +41,13 @@ const events = [
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <!-- Main Highlight -->
-        <div class="relative h-[500px] md:h-full rounded-[60px] overflow-hidden group shadow-2xl">
+        <div class="relative h-[500px] bg-black/90 md:h-full rounded-[60px] overflow-hidden  group shadow-2xl">
           <img :src="img4" alt="Fraternité" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-12">
             <span class="bg-copper text-midnight font-bold px-4 py-1 rounded-full text-[10px] uppercase tracking-widest w-fit mb-6">Mise en avant</span>
-            <h3 class="text-3xl md:text-4xl font-bold !text-white mb-4 font-heading">Soirée de Fraternité & Partage</h3>
+            <h3 class="text-3xl md:text-4xl font-bold !text-white mb-4 font-heading">Conférence de Fraternité & Partage</h3>
             <p class="text-white/70 max-w-md mb-8 italic">"Là où deux ou trois sont assemblés en Mon nom, Je suis au milieu d'eux."</p>
-            <router-link to="/contact" class="btn-primary w-fit">Se renseigner</router-link>
+            <router-link to="/contact" class="btn-primary w-fit">Valide ton ticket</router-link>
           </div>
         </div>
 

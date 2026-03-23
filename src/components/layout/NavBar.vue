@@ -56,6 +56,7 @@ onUnmounted(() => {
         <router-link to="/" class="nav-link">Accueil</router-link>
         <router-link to="/academy" class="nav-link">Academy</router-link>
         <router-link to="/resources" class="nav-link">Ressources</router-link>
+        <router-link to="/blog" class="nav-link">Blog</router-link>
         <router-link to="/contact" class="nav-link">Contact</router-link>
       </div>
 
@@ -94,6 +95,7 @@ onUnmounted(() => {
               { name: 'Accueil', path: '/' },
               { name: 'Academy', path: '/academy' },
               { name: 'Ressources', path: '/resources' },
+              { name: 'Blog', path: '/blog' },
               { name: 'Contact', path: '/contact' }
             ]" 
             :key="i"

@@ -59,11 +59,11 @@ onUnmounted(() => {
 
 const features = [
   {
-    title: "Mariage selon Son Cœur",
+    title: "Mariage selon la volonté parfaite de Dieu",
     description: "Une union qui honore Dieu."
   },
   {
-    title: "Équilibre & Harmonie",
+    title: "Épanouissement et équilibre",
     description: "Des foyers stables avec Christ."
   }
 ];
@@ -122,7 +122,7 @@ const features = [
               
               <div class="pt-8">
                 <router-link to="/academy" class="inline-block bg-copper text-midnight font-bold px-10 py-4 rounded-full hover:bg-white transition-all duration-300 uppercase tracking-widest text-sm shadow-xl">
-                  Découvrir l'école des futurs époux
+                  Découvrir l'école des futurs époux et épouses
                 </router-link>
               </div>
             </div>

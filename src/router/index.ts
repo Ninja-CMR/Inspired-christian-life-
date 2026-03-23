@@ -16,6 +16,21 @@ const router = createRouter({
             component: AcademyView
         },
         {
+            path: '/academy/personality',
+            name: 'academy-personality',
+            component: AcademyView
+        },
+        {
+            path: '/academy/inner-dialogue',
+            name: 'academy-inner-dialogue',
+            component: AcademyView
+        },
+        {
+            path: '/academy/future-spouses',
+            name: 'academy-future-spouses',
+            component: AcademyView
+        },
+        {
             path: '/resources',
             name: 'resources',
             component: () => import('../views/ResourcesView.vue')

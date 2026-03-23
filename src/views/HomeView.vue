@@ -14,7 +14,7 @@ import EventsSection from '../components/sections/EventsSection.vue';
 import type { IFormation } from '../interfaces/IFormation';
 import afficheFormation from '../assets/images/ecole/affiche1.jpeg'
 import afficheFormation2 from '../assets/images/ecole/estime.jpeg'
-import afficheFormation3 from '../assets/images/ecole/estime.jpg'
+import afficheFormation3 from '../assets/images/ecole/soi.jpg'
 
 const formations: IFormation[] = [
   {
@@ -29,7 +29,7 @@ const formations: IFormation[] = [
   {
     id: '2',
     title: 'Changer son Dialogue Intérieur',
-    description: 'Guérir l\'estime de soi et briser les cycles pessimistes en 12 jours.',
+    description: 'Guérir l\'estime de soi et briser les cycles toxiques en 12 jours.',
     priceCFA: 2000,
     duration: '12 Jours',
     category: 'Système Émotionnel',
@@ -38,7 +38,7 @@ const formations: IFormation[] = [
   {
     id: '3',
     title: 'École des Futurs Époux/Epouses',
-    description: 'Préparation prophétique et pratique à l\'alliance de destinée sur 3 mois.',
+    description: 'Préparation prophétique et pratique au mariage de destinée sur 3 mois.',
     priceCFA: 10000,
     duration: '3 mois',
     category: 'Mariage',

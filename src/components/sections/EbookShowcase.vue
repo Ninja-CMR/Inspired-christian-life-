@@ -57,7 +57,7 @@ import ebookPDF from '../../assets/ebook pdf/LES 10 --CROYANCES QUI ELOIGNENT LE
             <span class="inline-block px-3 py-1 bg-copper/20 text-copper text-[10px] font-bold uppercase tracking-widest rounded-full mb-4">3.000 CFA</span>
             <h3 class="text-3xl !text-white mb-4 font-heading leading-tight">Je ne subis plus</h3>
             <p class="text-white/50 mb-8 text-sm font-body leading-relaxed">
-              Comprendre et guérir son système émotionnel pour ne plus être victime de son passé.
+              Comprendre et guérir son système émotionnel pour batir des relations stables et épanouies.
             </p>
             <a
               href="https://chretienentrepreneur.mychariow.shop/prd_xyl1m1" 

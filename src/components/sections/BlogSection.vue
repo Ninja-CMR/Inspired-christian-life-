@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import img1 from '../../assets/images/activités/photo_5961063863094986845_y.jpeg'
 import img2 from '../../assets/images/activités/photo_5961063863094986815_y.jpg'
-import img3 from '../../assets/images/activités/fraternité.jpg'
+import img3 from '../../assets/images/mariage/WhatsApp Image 2026-03-20 at 19.50.55 (2).jpeg'
 
 const posts = [
   {
