@@ -20,7 +20,7 @@ const academySlides = [
     tag: "Bienvenue"
   },
   {
-    title: "École des Futurs Époux",
+    title: "École des Futurs Époux et Épouse",
     subtitle: "Préparez votre alliance de destinée avec sagesse et révélation. Un accompagnement intensif de 3 mois.",
     image: afficheFormation,
     tag: "Mariage"
