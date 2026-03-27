@@ -21,12 +21,13 @@ const handleSubmit = () => {
         <!-- Left Side: Text and Info -->
         <div class="max-w-xl">
           <h1 class="text-5xl md:text-7xl font-bold text-black mb-8 uppercase tracking-tighter leading-none">
-            Parlons de <br/> votre <span class="text-copper">Destinée</span>
+            Parlons de <br/> votre future <span class="text-copper">Mariage</span>
           </h1>
-          <p class="text-xl text-gray-600 mb-12 font-body leading-relaxed">
+           <li>
+             <p class="text-xl text-gray-600 mb-12 font-body leading-relaxed">
             Une question sur nos formations ? Un besoin d'accompagnement spécifique ? Nous sommes à votre écoute pour vous aider à bâtir votre futur.
-          </p>
-
+            </p>
+           </li>
           <div class="space-y-8">
             <div class="flex items-start gap-6">
               <div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center flex-shrink-0">
@@ -36,7 +37,7 @@ const handleSubmit = () => {
               </div>
               <div>
                 <h3 class="text-xs font-bold uppercase tracking-widest text-copper mb-1">Email</h3>
-                <p class="text-[12px] font-bold">Inpirechristianlife.infos@gmail.com</p>
+                <p class="text-[13px] font-bold">Inpirechristianlife.infos@gmail.com</p>
               </div>
             </div>
 

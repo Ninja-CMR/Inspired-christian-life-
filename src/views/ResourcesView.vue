@@ -34,7 +34,7 @@ const resources = [
     <div class="container mx-auto px-6">
       <div class="max-w-4xl mb-20">
         <h1 class="text-5xl md:text-7xl font-bold text-black mb-8 uppercase tracking-tighter">
-          Ressources <span class="text-copper">Prophétiques</span>
+          Ressources de  <span class="text-copper">Transformation</span>
         </h1>
         <p class="text-xl text-gray-600 leading-relaxed font-body">
           Des outils concrets pour vous accompagner dans votre cheminement vers une alliance de destinée et une vie épanouie.
