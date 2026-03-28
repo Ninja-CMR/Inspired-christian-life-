@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import img1 from '../../assets/images/activités/photo_5796569974322613153_y.jpg'
-import img2 from '../../assets/images/activités/photo_5961063863094986792_y.jpg'
-import img3 from '../../assets/images/activités/photo_5961063863094986815_y.jpg'
-import img4 from '../../assets/images/activités/fraternité.jpg'
+import img2 from '../../assets/images/évènement/agape1.jpeg'
+import img3 from '../../assets/images/évènement/agape2.jpeg'
+import img5 from '../../assets/images/évènement/assemblééGénérale.jpeg'
 
 const events = [
   {
@@ -12,16 +12,16 @@ const events = [
     image: img1
   },
   {
-    title: "Assemblée générales ICL (AG)",
+    title: "Assemblée Générale ICL (AG)",
     location: "Douala/ En Présentiel",
     date: "Décembre 2026",
-    image: img2
+    image: img3
   },
   {
     title: "Agape ICL",
     location: "Doaula",
     date: "Bientôt disponible",
-    image: img3
+    image: img2
   }
 ];
 </script>
@@ -33,7 +33,7 @@ const events = [
 
     <div class="container mx-auto px-6 relative z-10">
       <div class="text-center mb-20">
-        <span class="text-copper font-bold uppercase tracking-widest text-sm mb-4 block">Vivre Ensemble</span>
+        <span class="text-copper font-bold uppercase tracking-widest text-sm mb-4 block">Notre communauté</span>
         <h2 class="text-5xl md:text-7xl font-bold !text-warm-white uppercase tracking-tighter leading-none font-heading">
           Prochains <span class="text-white">Événements</span>
         </h2>
@@ -41,9 +41,10 @@ const events = [
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <!-- Main Highlight -->
-        <div class="relative h-[500px] bg-black/90 md:h-full rounded-[60px] overflow-hidden  group shadow-2xl">
-          <img :src="img4" alt="Fraternité" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-12">
+        <div class="relative h-[500px] bg-black/95 md:h-full rounded-[60px] overflow-hidden  group shadow-2xl">
+          <div class="absolute inset-0 bg-black/50 z-10 pointer-events-none"></div>
+          <img :src="img5" alt="Fraternité" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-20 flex flex-col justify-end p-12">
             <span class="bg-copper text-midnight font-bold px-4 py-1 rounded-full text-[10px] uppercase tracking-widest w-fit mb-6">Mise en avant</span>
             <h3 class="text-3xl md:text-4xl font-bold !text-white mb-4 font-heading">Conférence de Fraternité & Partage</h3>
             <p class="text-white/70 max-w-md mb-8 italic">"Là où deux ou trois sont assemblés en Mon nom, Je suis au milieu d'eux."</p>

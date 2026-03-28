@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
 import img1 from '../../assets/images/ecole/estime.jpeg';
-import img2 from '../../assets/images/ecole/Personnalite.jpg';
+import img2 from '../../assets/images/ecole/estime.jpg'
 import img3 from '../../assets/images/ecole/affiche1.jpeg';
 import img4 from '../../assets/images/ecole/soi.jpg';
 
@@ -16,14 +16,14 @@ const slides = [
   {
     title: "Découverte de sa Personnalité",
     subtitle: "Comprendre vos forces et faiblesses pour un avenir relationnel éclairé.",
-    image: img2,
+    image: img1,
     tag: "Formation Phare",
     link: "/academy/personality"
   },
   {
     title: "Changer son Dialogue Intérieur",
     subtitle: "Guérir l'estime de soi et briser les cycles pessimistes en 12 jours.",
-    image: img1,
+    image: img2,
     tag: "Système Émotionnel",
     link: "/academy/inner-dialogue"
   },
@@ -107,7 +107,7 @@ onUnmounted(() => {
             </p>
             
             <div class="flex flex-wrap gap-6 pt-4">
-              <router-link to="/contact" class="bg-copper text-midnight font-bold px-10 py-5 rounded-full hover:bg-white transition-all duration-300 uppercase tracking-widest text-sm shadow-xl hover:shadow-copper/20">
+              <router-link to="/contact" class="inline-flex items-center justify-center px-8 py-4  bg-copper  font-bold  rounded-full hover:bg-white transition-all duration-300 uppercase  text-sm shadow-xl hover:shadow-copper/20 leading-tight ">
                 Prendre un appel découvert gratuit
               </router-link>
               <router-link to="/contact" class="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold px-10 py-5 rounded-full hover:bg-white hover:text-midnight transition-all duration-300 uppercase tracking-widest text-sm">

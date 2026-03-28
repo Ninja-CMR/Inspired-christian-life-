@@ -14,7 +14,7 @@ defineProps<{
           Transformez votre Intérieur, Transformez vos Relations.
         </h2>
         <h3 class="text-xl text-anthracite font-subtitle">
-          Découvrez nos formations phares de Destiny Academy.
+          Découvrez nos formations phares de la Destiny Academy.
         </h3>
       </div>
 
