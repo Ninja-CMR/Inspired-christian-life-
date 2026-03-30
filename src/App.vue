@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import NavBar from './components/layout/NavBar.vue';
 import TheFooter from './components/layout/TheFooter.vue';
+import ChatBot from './components/common/ChatBot.vue';
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col relative">
     <NavBar />
     <div class="flex-grow">
       <router-view v-slot="{ Component }">
@@ -17,6 +18,7 @@ import TheFooter from './components/layout/TheFooter.vue';
       </router-view>
     </div>
     <TheFooter />
+    <ChatBot />
   </div>
 </template>
 
