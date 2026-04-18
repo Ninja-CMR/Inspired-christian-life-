@@ -27,6 +27,11 @@ const handleSubmit = async () => {
     if (response.ok) {
       isSuccess.value = true;
       form.value = { name: '', email: '', subject: '', message: '' };
+      
+      // Redirect to WhatsApp after a brief delay so the user sees the success message
+      setTimeout(() => {
+        window.location.href = 'https://wa.me/237695018406?text=Bonjour, j\'ai rempli le formulaire de contact sur votre site.';
+      }, 1500);
     } else {
       error.value = result.error || "Une erreur est survenue lors de l'envoi.";
     }

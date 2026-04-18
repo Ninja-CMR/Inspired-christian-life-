@@ -9,13 +9,13 @@ const events = [
     title: "Christian AFTERWORK",
     location: "Douala ",
     date: "Bientôt disponible",
-    image: img1
+    image: img3
   },
   {
     title: "Assemblée Générale ICL (AG)",
     location: "Douala/ En Présentiel",
     date: "Décembre 2026",
-    image: img3
+    image: img1
   },
   {
     title: "Agape ICL",
@@ -46,8 +46,7 @@ const events = [
           <img :src="img5" alt="Fraternité" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
           <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-20 flex flex-col justify-end p-12">
             <span class="bg-copper text-midnight font-bold px-4 py-1 rounded-full text-[10px] uppercase tracking-widest w-fit mb-6">Mise en avant</span>
-            <h3 class="text-3xl md:text-4xl font-bold !text-white mb-4 font-heading">Conférence de Fraternité & Partage</h3>
-            <p class="text-white/70 max-w-md mb-8 italic">"Là où deux ou trois sont assemblés en Mon nom, Je suis au milieu d'eux."</p>
+            <h3 class="text-3xl md:text-4xl font-bold !text-white mb-4 font-heading">Conférence ICL</h3>
             <router-link to="/contact" class="btn-primary w-fit">Valide ton ticket</router-link>
           </div>
         </div>

@@ -100,8 +100,8 @@ const toggleChat = () => {
                   ? 'bg-midnight text-white rounded-tr-none' 
                   : 'bg-white text-midnight border border-sage/10 rounded-tl-none'
               ]"
+              v-html="msg.text"
             >
-              {{ msg.text }}
             </div>
           </div>
           

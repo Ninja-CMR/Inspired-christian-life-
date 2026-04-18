@@ -108,7 +108,7 @@ onUnmounted(() => {
             
             <div class="flex flex-wrap gap-6 pt-4">
               <router-link to="/contact" class="inline-flex items-center justify-center px-8 py-4  bg-copper  font-bold  rounded-full hover:bg-white transition-all duration-300 uppercase  text-sm shadow-xl hover:shadow-copper/20 leading-tight ">
-                Prendre un appel découvert gratuit
+                Prendre un appel <br> découvert gratuit
               </router-link>
               <router-link to="/contact" class="bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold px-10 py-5 rounded-full hover:bg-white hover:text-midnight transition-all duration-300 uppercase tracking-widest text-sm">
                 En savoir plus

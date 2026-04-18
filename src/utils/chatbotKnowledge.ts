@@ -31,6 +31,10 @@ export const chatbotKnowledge: KnowledgeItem[] = [
   {
     keywords: ["contact", "appel", "rendez-vous", "parler", "aider"],
     response: "Vous pouvez prendre un appel découverte gratuit pour discuter de votre situation. Rendez-vous sur notre page de contact ou cliquez sur le bouton 'Prendre un appel' sur le site."
+  },
+  {
+    keywords: ["combien", "prix", "coût", "tarif", "payer", "achat", "inscription"],
+    response: "Pour découvrir les tarifs détaillés et les modalités d'inscription à nos différentes formations, je vous invite à consulter directement notre page <a href='/academy' class='text-copper font-bold underline'>Destiny Academy</a>. Toutes les informations sur les investissements y sont précisées."
   }
 ];
 
