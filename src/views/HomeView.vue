@@ -11,6 +11,7 @@ import ReservationSection from '../components/sections/ReservationSection.vue';
 import CoachingCallout from '../components/sections/CoachingCallout.vue';
 import BlogSection from '../components/sections/BlogSection.vue';
 import EventsSection from '../components/sections/EventsSection.vue';
+import TeamSection from '../components/sections/TeamSection.vue';
 import type { IFormation } from '../interfaces/IFormation';
 import afficheFormation from '../assets/images/ecole/affiche1.jpeg'
 import afficheFormation2 from '../assets/images/ecole/estime.jpeg'
@@ -54,6 +55,8 @@ const formations: IFormation[] = [
     <VisionGrid />
     
     <AboutSection />
+    
+    <TeamSection />
     
     <AcademyGrid :formations="formations" />
     

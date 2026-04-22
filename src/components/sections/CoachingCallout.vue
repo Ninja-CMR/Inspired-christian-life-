@@ -21,7 +21,7 @@
           target="_blank"
           class="inline-block bg-copper text-midnight text-xl font-bold px-12 py-5 rounded-full hover:bg-copper-light transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-copper/20"
         >
-          Demander un entretien de coaching 
+          Réserver un RDV 
         </a>
         
         <p class="mt-8 text-midnight/40 text-sm">
