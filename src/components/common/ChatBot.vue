@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref, nextTick } from 'vue';
+import { useRouter } from 'vue-router';
 import { chatbotKnowledge, defaultResponse } from '../../utils/chatbotKnowledge';
+
+const router = useRouter();
 
 const isOpen = ref(false);
 const currentMessage = ref('');
@@ -55,6 +58,21 @@ const toggleChat = () => {
     scrollToBottom();
   }
 };
+
+const handleChatClick = (event: MouseEvent) => {
+  const target = event.target as HTMLElement;
+  const link = target.closest('a');
+  
+  if (link) {
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('/')) {
+      event.preventDefault();
+      router.push(href);
+      // Optional: keep chat open or close it
+      // isOpen.value = false;
+    }
+  }
+};
 </script>
 
 <template>
@@ -84,7 +102,11 @@ const toggleChat = () => {
         </div>
 
         <!-- Messages Area -->
-        <div ref="messagesContainer" class="flex-grow p-6 overflow-y-auto space-y-4 bg-warm-white/30 scroll-smooth">
+        <div 
+          ref="messagesContainer" 
+          class="flex-grow p-6 overflow-y-auto space-y-4 bg-warm-white/30 scroll-smooth"
+          @click="handleChatClick"
+        >
           <div 
             v-for="(msg, index) in messages" 
             :key="index"
