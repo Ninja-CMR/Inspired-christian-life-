@@ -54,6 +54,7 @@ onUnmounted(() => {
       <!-- Desktop Nav Links -->
       <div class="hidden md:flex items-center gap-10">
         <router-link to="/" class="nav-link">Accueil</router-link>
+        <router-link to="/#equipe" class="nav-link">Équipe</router-link>
         <router-link to="/academy" class="nav-link">Academy</router-link>
         <router-link to="/resources" class="nav-link">Ressources</router-link>
         <router-link to="/blog" class="nav-link">Blog</router-link>
@@ -93,6 +94,7 @@ onUnmounted(() => {
           <router-link 
             v-for="(link, i) in [
               { name: 'Accueil', path: '/' },
+              { name: 'Équipe', path: '/#equipe' },
               { name: 'Academy', path: '/academy' },
               { name: 'Ressources', path: '/resources' },
               { name: 'Blog', path: '/blog' },

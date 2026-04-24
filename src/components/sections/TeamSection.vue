@@ -64,13 +64,13 @@ const team = [
                 :alt="member.name" 
                 class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-midnight/90 via-midnight/20 to-transparent transition-opacity duration-500 opacity-80 group-hover:opacity-60"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent transition-opacity duration-500 opacity-90 group-hover:opacity-100"></div>
             </div>
 
             <!-- Content Overlay -->
             <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-              <h3 class="text-2xl md:text-3xl font-heading font-bold mb-1">{{ member.name }}</h3>
-              <p class="text-copper font-medium mb-3">{{ member.role }}</p>
+              <h3 class="text-2xl md:text-3xl font-heading font-bold mb-1 drop-shadow-lg text-white font-black tracking-wide">{{ member.name }}</h3>
+              <p class="text-copper font-bold mb-3 drop-shadow-md text-lg">{{ member.role }}</p>
               
               <div class="overflow-hidden h-0 group-hover:h-auto transition-all duration-500 ease-in-out">
                 <p class="text-white/80 font-body text-sm pt-2 border-t border-white/10">
