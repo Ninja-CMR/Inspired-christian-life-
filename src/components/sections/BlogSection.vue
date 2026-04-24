@@ -22,7 +22,7 @@ const posts = [
     title: "Communication & Conflits : Sagesse Biblique",
     date: "20 Septembre 2026",
     excerpt: "Des clés pratiques pour transformer les tensions en opportunités de croissance conjugale.",
-    category: "Mariage",
+    category: "Mariage ",
     image: img3
   }
 ];
