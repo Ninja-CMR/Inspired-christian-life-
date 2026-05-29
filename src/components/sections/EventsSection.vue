@@ -9,13 +9,13 @@ const events = [
     title: "Christian AFTERWORK",
     location: "Douala ",
     date: "Bientôt disponible",
-    image: img3
+    image: img1
   },
   {
     title: "Assemblée Générale ICL (AG)",
     location: "Douala/ En Présentiel",
     date: "Décembre 2026",
-    image: img1
+    image:  img3
   },
   {
     title: "Agape ICL",
